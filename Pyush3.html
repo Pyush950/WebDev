@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Form</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: #e0f2ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      padding-top: 20px;
+      color: #0056b3;
+    }
+
+    /* Center the form */
+    form {
+      background-color: #fff;
+      width: 320px;
+      margin: 30px auto;
+      padding: 25px 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    /* Radio and checkbox containers */
+    .radio-group, .checkbox-group {
+      margin-bottom: 15px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    .radio-group input[type="radio"],
+    .checkbox-group input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    /* Submit Button */
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    /* Image Styling */
+    img {
+      display: block;
+      height: 100px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Link Styling */
+    a {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    /* Table Styling */
+    table {
+      margin: 0 auto 50px auto;
+      border-collapse: collapse;
+      width: 90%;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Input Form</h2>
+
+  <form action="/submit" method="post">
+    <!-- Text Input -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <!-- Radio Buttons -->
+    <div class="radio-group">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="checkbox-group">
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to newsletter</label>
+    </div>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+
+  <!-- Image -->
+  <img src="https://gratisography.com/wp-content/uploads/2024/11/gratisography-augmented-reality-800x525.jpg" alt="Sample Image">
+
+  <!-- Link -->
+  <a href="https://youtube.com" target="_blank">Visit Site</a>
+
+  <!-- Table -->
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>Pyush</td>
+      <td>18</td>
+      <td>pyush896@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Anuj</td>
+      <td>15</td>
+      <td>anuj55@gmail.com</td>
+    </tr>
+  </table>
+
+</body>
+</html>
